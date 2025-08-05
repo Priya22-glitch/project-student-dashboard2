@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title> dash student </title>
+        <link rel="stylesheet" href="studash.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    
+        <script src="https://kit.fontswesome.com/yourcode.js crossorigin=anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="Nav">
+        <div class="one">
+        <div class="navbar">
+          <div class="navbar-left">
+          <span class="navbar-logo-icon">....</span>
+          <h1 class="navbar-logo-text">logo</h1>
+        </div>
+         <nav class="main-nav-links">
+          <a href="#index">Index</a>
+          <a href="#display" class="active-link">Display</a>
+          <a href="#update">Update</a>
+          <a href="#buy">Buy</a>
+          <a href="#showfiles">Showfiles</a>
+          <a href="#class12">Class12</a>
+        </nav>
+        <div class="navbar-right">
+          <a href="#">Log out</a>
+            <div class="profile-picture-top">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg" alt="User Profile">
+        </div>
+      </div>
+
+    <div class="dropdown-container">
+        <!-- This checkbox is the brain and It's hidden by CSS. -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <!-- clickable icon. It controls the checkbox. -->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </label>
+        
+        <!-- This is the menu-->
+        <div class="dropdown-content">
+           
+            <a href="#index">Index</a>
+            <a href="#display">Display</a>
+            <a href="#update">Update</a>
+            <a href="#buy">Buy</a>
+            <a href="#showfiles">Show Files</a>
+            <a href="#class12">Class 12</a>
+            <hr>
+            <a href="#" class="logout-button">
+                Log Out 
+            </a>
+        </div>
+    </div>
+</div>
+            </div>
+            </div>
+            <div class="content" align="center">
+                <div class="topbar">
+                    <h2>My Profile </h2>                    
+                <div class="contentbar">
+                     <img src="user.png">
+                    <br><br><br><br><br><br>
+                    <div class="block">
+                        
+                        <div class="b1"><i class="fa-solid fa-cart-shopping"></i>
+                            orders
+                        </div>
+                        
+                        <div class="b2">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            store
+                        </div>
+                    </div>
+                        <h1 class="details">Your Details</h1> </br>
+                        <div class="form-container" >
+                            <div class="column">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td><label for="student_name"></label>
+                                        <input type="text" name="student_name" placeholder="Enter Your Name" class="textbox" id="student_name" required><br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Username:</td>
+                                    <td><label for="username"></label>
+                                        <input type="text" name="username" placeholder="Enter Your Username" class="textbox" id="username" required><br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td><label for="password"></label>
+                                        <input type="password" name="password" placeholder="Enter Your Password" class="textbox" id="password" required><br><br>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>Postal code:</td>
+                                    <td><label for="pincode"></label>
+                                        <input type="text" name="pincode" placeholder="Enter Your Pincode" class="textbox" id="pincode" required><br><br>
+                                    </td>
+                                </tr> 
+                                </div>
+                         
+                                <tr>
+                                    <td>Email ID:</td>
+                                    <td><label for="email"></label>
+                                        <input type="email" name="email" placeholder="Enter Your Email ID" class="textbox" id="email" required><br><br>
+                                    </td>
+                                </tr>
+                                 
+                                <tr>
+                                   <td>Phone:</td>
+                               <td><label for="phone"></label>
+                                   <input type="text" name="phone" placeholder="Enter Your Phone Number" class="textbox" id="phone" required><br><br>
+                               </td>
+                               </tr>
+                               <tr>
+                                   <td>Exam:</td>
+                                   <td><label for="exam_interested"></label>
+                                      <input list="exam-options" name="exam_interested" id="exam_interested" placeholder="Select Exam..." required>
+                                      <datalist id="exam-options">
+                                          <option value="JEE">
+                                          <option value="NEET">
+                                          <option value="SSC">
+                                          <option value="Banking">
+                                          <option value="CA">
+                                          <option value="10th">
+                                          <option value="12th">
+                                          <option value="UPSC">
+                                          <option value="Other">
+                                      </datalist><br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gender:</td>
+                                    <td>
+                                    <label for="gender"></label>
+                                    <select name="gender" id="gender" required>
+                                        <option value="">--Select--</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select><br><br>
+                                </td>
+                                </tr>
+                                <div>
+                                <input type="submit" class="btn" value="Register">
+                                </div>
+                        </div>
+                                       
+                </div>
+                </div>
+                </div>
+    </body>
+   </html>
